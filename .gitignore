@@ -12,7 +12,6 @@ coverage/
 # env / secrets
 .env
 .env.*
-!.env.example
 
 # local data & uploads
 backend/data/
@@ -22,3 +21,17 @@ backend/uploads/
 *.tsbuildinfo
 *.pem
 .vercel/
+
+# Local secrets, env templates, agent/setup docs — do not publish to GitHub
+.env
+.env.*
+.env.example
+AGENTS.md
+CLAUDE.md
+.cursor/
+.agent/
+setup.md
+SETUP.md
+SETUP-*.md
+security.md
+SECURITY.md
